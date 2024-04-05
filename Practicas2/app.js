@@ -1,14 +1,14 @@
 const leer = require("prompt-sync")();
 
 let intentDeseadosUsuar = 0;
-
+let rangoNumeroSecreto = 0;
 let numIngresado = 0;
 let numSecreto = 0;
 console.log("Bienvenido a adivinar el numero secreto");
 console.log("ingrese cantidad de intentos")
 intentDeseadosUsuar = Number(leer());
-
-numSecreto =Math.floor(Math.random() * (intentDeseadosUsuar*2) + 1);
+rangoNumeroSecreto = (intentDeseadosUsuar*2) + 1;
+numSecreto =Math.floor(Math.random() * rangoNumeroSecreto);
 
 console.log(intentDeseadosUsuar);
 console.log(numSecreto)
